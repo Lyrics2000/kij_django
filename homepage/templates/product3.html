@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+ <!-- Room Page Slider -->
+ <header class="header slider">
+    <div class="owl-carousel owl-theme">
+        <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/slider/13.jpg' %}"></div>
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/slider/14.jpeg' %}"></div>
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/slider/15.jpg' %}"></div>
+    </div>
+    <!-- arrow down -->
+    <div class="arrow bounce text-center">
+        <a href="#" data-scroll-nav="1" class=""> <i class="ti-arrow-down"></i> </a>
+    </div>
+</header>
+<!-- Room Content -->
+<section class="rooms-page section-padding" data-scroll-index="1">
+    <div class="container">
+        <!-- project content -->
+        <div class="row">
+            <div class="col-md-12"> 
+                <span>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                </span>
+                <div class="section-subtitle">Our Services</div>
+                <div class="section-title">SIFUNI BWANA HYMNBOOK SERIES</div>
+            </div>
+            <div class="col-md-8">
+                <p class="mb-30">We are the printers and distributors of the famous Sifuni Bwana Hymnbook Series and other hymnbooks</p>
+                <p class="mb-30">Tempus egestas sed sed risus pretium. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>We Have</h6>
+                        <ul class="list-unstyled page-list mb-30">
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>Praise Ye The Lord (Sifuni Bwana)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>Nyimbo Za Sifa </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>Nyimbo Cia Kugooca Mwathani</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>
+                                        Pakura Ruoth</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <ul class="list-unstyled page-list mb-30">
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>
+                                        Mutaiei Mwiai</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>Nyimbo Cia Kiroho</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>Maasai Hymn Book</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-list-icon"> <span class="ti-check"></span> </div>
+                                <div class="page-list-text">
+                                    <p>Nyimbo Cia Kuguna maroho</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <h6>Special Requests</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu non diam. </p>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <div class="butn-dark mt-15 mb-30"> <a href="contact.html"><span>Contact Us today for your Book</span></a> </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

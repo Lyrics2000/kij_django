@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="3" data-background="{% static 'assets/img/slider/19.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left caption mt-90">
+                    <h5>Get in touch</h5>
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="row mb-90">
+                <div class="col-md-6 mb-60">
+                    <h3>HEAD OFFICE</h3>
+                    <p> Our Head Office is located at AIC Kijabe Mission Station Off Nairobi- Naivasha Highway</p>
+                    <div class="reservations mb-30">
+                        <div class="icon"><span class="flaticon-call"></span></div>
+                        <div class="text">
+                            <p>Tel</p> <a href="tel:0715-672-029">0715 672 029</a>
+                        </div>
+                    </div>
+                    <div class="reservations mb-30">
+                        <div class="icon"><span class="flaticon-envelope"></span></div>
+                        <div class="text">
+                            <p>Email Info</p> <a href="mailto:administration@kijabeprintingpress.co.ke">administration@kijabeprintingpress.co.ke</a>
+                            <p>Email Info</p> <a href="mailto:customercare@kijabeprintingpress.co.ke">customercare@kijabeprintingpress.co.ke</a>
+                        </div>
+                    </div>
+                    <div class="reservations">
+                        <div class="icon"><span class="flaticon-location-pin"></span></div>
+                        <div class="text">
+                            <p>Address</p> P.O. Box 40 -00220, KIJABE
+                            <br>AIC Kijabe Printing Press,
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-30 offset-md-1">
+                    <h3>Get in touch</h3>
+                    <form method="post" class="contact__form" action="mail.php">
+                        <!-- form message -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-success contact__msg" style="display: none" role="alert"> Your message was sent successfully. </div>
+                            </div>
+                        </div>
+                        <!-- form elements -->
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input name="name" type="text" placeholder="Your Name *" required="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="email" type="email" placeholder="Your Email *" required="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="phone" type="text" placeholder="Your Number *" required="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="subject" type="text" placeholder="Subject *" required="">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required=""></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="butn-dark"><a href="#0"><span>Send Message</span></a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Map Section -->
+            <div class="row">
+                <div class="col-md-12 map animate-box" data-animate-effect="fadeInUp">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d510651.02304913616!2d36.334226307318616!3d-0.7643118836287894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ec507e36e7f79d6!2sAlC%20Kijabe%20Printing%20Press!5e0!3m2!1sen!2ske!4v1670144542575!5m2!1sen!2ske" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Contact -->
+ <section class="contact section-padding">
+    <div class="container">
+        <div class="row mb-90">
+            <div class="col-md-6 mb-60">
+                <h3>MARKRTING OFFICE</h3>
+                <p> Our MARKRTING OFFICE is located At A.I.C. Central Office, Upper Hill Road, Opposite Rahimtulla Towers</p>
+                <div class="reservations mb-30">
+                    <div class="icon"><span class="flaticon-call"></span></div>
+                    <div class="text">
+                        <p>Tel</p> <a href="tel:+254-202-184-852">+254 202 184 852</a>
+                        <p>Tel</p> <a href="tel:+254-202-324-151">+254 702 324 151</a>
+                    </div>
+                </div>
+                <div class="reservations mb-30">
+                    <div class="icon"><span class="flaticon-envelope"></span></div>
+                    <div class="text">
+                        <p>Email Info</p> <a href="mailto:marketingmanager@kijabeprintingpress.co.ke">marketingmanager@kijabeprintingpress.co.ke</a>
+                        <p>Email Info</p> <a href="mailto:sales@kijabeprintingpress.co.ke">sales@kijabeprintingpress.co.ke</a>
+                    </div>
+                </div>
+                <div class="reservations">
+                    <div class="icon"><span class="flaticon-location-pin"></span></div>
+                    <div class="text">
+                        <p>Address</p> P.O. Box 40 -00220, KIJABE
+                        <br>AIC Kijabe Printing Press,
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mb-30 offset-md-1">
+                <h3>Get in touch</h3>
+                <form method="post" class="contact__form" action="mail.php">
+                    <!-- form message -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-success contact__msg" style="display: none" role="alert"> Your message was sent successfully. </div>
+                        </div>
+                    </div>
+                    <!-- form elements -->
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input name="name" type="text" placeholder="Your Name *" required="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="email" type="email" placeholder="Your Email *" required="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="phone" type="text" placeholder="Your Number *" required="">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="subject" type="text" placeholder="Subject *" required="">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required=""></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="butn-dark"><a href="#0"><span>Send Message</span></a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Map Section -->
+        <div class="row">
+            <div class="col-md-12 map animate-box" data-animate-effect="fadeInUp">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.596383774831!2d36.81581!3d-1.29568!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe4f8c7ffe4151fe7!2sAIC%20Central%20Office!5e0!3m2!1sen!2ske!4v1670144980058!5m2!1sen!2ske" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content %}

@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <!-- Restaurant Slider -->
+  <header class="header slider">
+    <div class="owl-carousel owl-theme">
+        <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/restaurant/13.jpg' %}"></div>
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/restaurant/5.jpg' %}"></div>
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/restaurant/14.jpeg' %}"></div>
+    </div>
+    <!-- arrow down -->
+    <div class="arrow bounce text-center">
+        <a href="#" data-scroll-nav="1" class=""> <i class="ti-arrow-down"></i> </a>
+    </div>
+</header>
+<!-- Restaurant Content -->
+<section class="rooms-page section-padding" data-scroll-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-left"> 
+                <span>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                </span>
+                <div class="section-subtitle">An Experience in praising the Lord in songs</div>
+                <div class="section-title">Sifu bwana Books</div>
+            </div>
+            <div class="col-md-12">
+                <p class="mb-30">Are you a school/learning institution, an urban church or a cosmopolitan church?  The Sifuni Bwana Hymnbooks Series is designed for you. The Sifuni Bwana Hymnbooks Series is a series of two-language hymnbooks, containing selections of favorite and commonly used hymns. They are designed to for use in learning institutions as well as urban and other cosmopolitan churches. We have 4 different languages of Sifuni Bwana Hymn book namely:</p>
+                <h6>Get Our books from the playstore</h6>
+                <ul class="list-unstyled page-list mb-30">
+                    <li>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <p>Praise Ye The Lord (Sifuni Bwana) ###########</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <p>Nyimbo Za Sifa ############</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <p>Nyimbo Cia Kugooca Mwathani (Sifuni Bwana) ############</p>
+                        </div>
+                    </li>
+                    <LI>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <p>Pakura Ruoth (Praise Ye The Lord) ###########</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <p>Mutaiei Mwiai (Sifuni Bwana) ############</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <p>Nyimbo Cia Kiroho ############</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <p>Maasai Hymn Book (Isinkoliotin) ############</p>
+                        </div>
+                    </li>
+                </ul>
+                <h6>Physical books outlet</h6>
+                <p>You can get our books at any Testbook center, Bookstores or contuct us for one</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Restaurant Menu -->
+<section style="background: #E0BFB8!important;" id="menu" class="restaurant-menu menu section-padding bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-subtitle"><span>Our Book prices</span></div>
+                <div class="section-title"><span>Catalogue</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="tabs-icon col-md-10 offset-md-1 text-center">
+                        
+                    </div>
+                    <div class="restaurant-menu-content col-md-12">
+                        <!-- Starters -->
+                        <div id="tab-1-content" class="cont active">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="menu-info">
+                                        <h5>Maasai Hymn Book (Isinkoliotin) <span style="color: white;" class="price">300KSh</span></h5>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h5 >Nyimbo Za Sifa <span style="color: white;" class="price">350Ksh</span></h5>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h5>Praise Ye The Lord (Sifuni Bwana) <span style="color: white;" class="price">300Ksh</span></h5>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h5>Nyimbo Cia Kugooca Mwathani <span style="color: white;" class="price">500Ksh</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 offset-md-2">
+                                    <div class="menu-info">
+                                        <h5>Pakura Ruoth (Praise Ye The Lord) <span style="color: white;" class="price">400Ksh</span></h5>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h5>Mutaiei Mwiai (Sifuni Bwana) <span style="color: white;" class="price">300Ksh</span></h5>
+                                    </div>
+                                    <div class="menu-info">
+                                        <h5>Nyimbo Cia Kiroho <span style="color: white;" class="price">450Ksh</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testiominals -->
+<section class="testimonials">
+    <div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'assets/img/slider/2.jpg' %}" data-overlay-dark="3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="testimonials-box">
+                        <div class="head-box">
+                            <h6>Sifu Bwana</h6>
+                            <h4>Foundation</h4>
+                            <div class="line"></div>
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"> <span class="quote"><img src="{% static 'assets/img/quot.png' %}" alt=""></span>
+                                <p>As a Christian organization, Kijabe Printing Press believes in the legacy of touching lives, which we do through the Sifuni Bwana Foundation. This is the platform from which Sifuni Bwana and Kijabe Printing Press gives back to the community. The foundation’s objectives are:</p>
+                            </div>
+                            <div class="item"> <span class="quote"><img src="{% static 'assets/img/quot.png' %}" alt=""></span>
+                                <p>1. To ensure that every student gets the Hymnbook affordably.</p>
+                                <p>2. To give scholarships to needy and bright students.</p>
+                                <p>3. To support Christian Union activities.</p>
+                            </div>
+                            <div class="item"> <span class="quote"><img src="{% static 'assets/img/quot.png' %}" alt=""></span>
+                                <p>Please get in touch with us for ways of collaboration between your school and us.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

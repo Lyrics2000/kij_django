@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4" data-background="{% static 'assets/img/slider/1.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-left caption mt-90">
+                    <h5><a href="news.html">News</a> / Post Page</h5>
+                    <h1>Welcome to kijabe News</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Post -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8"> 
+                    <img src="img/restaurant/19.jpg' %}" class="mb-30" alt="">
+                    <h2>Our Mobile apps</h2>
+                    <p>Quisque pretium fermentum quam, sit amet cursus ante sollicitudin vel. Morbi consequat risus consequat, porttitor orci sit amet, iaculis nisl. Integer quis sapien neceli ultrices euismod sit amet id lacus. Sed a imperdiet erat. Duis eu est dignissim lacus dictum hendrerit quis vitae mi. Fusce eu nulla ac nisi cursus tincidun. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer tristique sem eget leo faucibus porttitor.</p>
+                    <p>Nulla vitae metus tincidunt, varius nunc quis, porta nulla. Pellentesque vel dui nec libero auctor pretium id sed arcu. Nunc consequat diam id nisl blani dinisim. Etiam commodo diam dolor, at scelerisque sem finibus sit amet. Curabitur id lectus eget purus finibus laoreet.</p>
+                    <blockquote>
+                        <p>Nulla facilisi. Sedeuter nunc vouta miss mollis sapien vel, conseyer tureution yer vintane in libero semper. Quisque ravida eros ut turpis interdum ornare. Inter miss they adama seder a imerdie fames ac ante ipsum primis in faucibus.</p> <cite>Micheal Martin</cite>
+                    </blockquote>
+                
+                    <p>Design pretium fermentum quam, sit amet cursus ante sollicitudin vel. Morbi consequat risus consequat, porttitor orci sit amet, iaculis nisl. Integer quis sapien neceli ultrices euismod sit amet id lacus. Sed a imperdiet erat. Duis eu est dignissim lacus dictum hendrerit quis vitae mi. Fusce eu nulla ac nisi cursus tincidun. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer tristique sem eget leo faucibus porttitor.</p>
+                    <div class="post-comment-section">
+                        <div class="row">
+                            <!-- Comment -->
+                            <div class="col-md-12">
+                                <div class="news-post-comment-wrap">
+                                    <div class="post-user-comment"> <img src="{% static 'assets/img/team/8.png' %}" alt=""> </div>
+                                    <div class="post-user-content">
+                                        <span>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                        </span>
+                                        <h3>Robert Martin<span> 29 October 2022</span></h3>
+                                        <p>Restaurant ultricies nibh non dolor maximus sceleue inte molliser rana neque nec tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+                <div class="col-md-4">
+                    <div class="news2-sidebar row">
+                        <div class="col-md-12">
+                            <div class="widget search">
+                                <form>
+                                    <input type="text" name="search" placeholder="Type here ...">
+                                    <button type="submit"><i class="ti-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h6>Recent Posts</h6>
+                                </div>
+                                <ul class="recent">
+                                    <li>
+                                        <div class="thum"> <img src="{% static 'assets/img/restaurant/16.jpeg' %}" alt=""> </div> 
+                                        <a href="post.html">Sifu Bwana</a>
+                                    </li>
+                                    <li>
+                                        <div class="thum"> <img src="{% static 'assets/img/restaurant/17.jpeg' %}" alt=""> </div> 
+                                        <a href="post.html">Our Mobile Apps</a>
+                                    </li>
+                                    <li>
+                                        <div class="thum"> <img src="{% static 'assets/img/restaurant/18.jpg' %}" alt=""> </div> 
+                                        <a href="post.html">New Books</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+
