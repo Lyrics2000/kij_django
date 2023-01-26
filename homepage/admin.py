@@ -9,8 +9,15 @@ ColorFortext,
 PrintedSideOfPapertext,
 PaperCover,
 ColorForCover,
-PrintedSidesOfThePaperCover)
+PrintedSidesOfThePaperCover,
+Banner,
+AboutTeam,
+KijabeSerivices)
 
+
+
+admin.site.register(KijabeSerivices)
+admin.site.register(AboutTeam)
 admin.site.register(BooksHolder)
 admin.site.register(PaperSizes)
 admin.site.register(Binding) 
@@ -20,3 +27,4 @@ admin.site.register(PrintedSideOfPapertext)
 admin.site.register(PaperCover)
 admin.site.register(ColorForCover)
 admin.site.register(PrintedSidesOfThePaperCover)
+admin.site.register(Banner)

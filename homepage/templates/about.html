@@ -79,6 +79,9 @@
     </div>
 </section>
 
+
+
+
     <!-- Services -->
     <section class="services section-padding">
         <div class="container">
@@ -114,7 +117,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left"><img src="{% static 'assets/img/spa/6.jpeg" alt=""></a>
+                    <div class="img left"><img src="{% static 'assets/img/spa/6.jpeg' %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
@@ -160,94 +163,13 @@
         </div>
         <div class="row">
             <div class="col-md-12 owl-carousel owl-theme">
-                <div class="item">
-                    <div class="img"> <img src="{% static 'assets/img/team/7.png' %}" alt=""> </div>
-                    <div class="info">
-                        <h6>Valentina Karla</h6>
-                        <p>General Manager</p>
-                        <div class="social valign">
-                            <div class="full-width"> 
-                               <a href="#"><i class="ti-instagram"></i></a> 
-                               <a href="#"><i class="ti-twitter"></i></a> 
-                               <a href="#"><i class="ti-facebook"></i></a> 
-                               <a href="#"><i class="ti-pinterest"></i></a>
-                               <p>valentina@hotel.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img"> 
-                    <img src="{% static 'assets/img/team/7.png' %}" alt=""> </div>
-                    <div class="info">
-                        <h6>Micheal White</h6>
-                        <p>Guest Service Department</p>
-                        <div class="social valign">
-                            <div class="full-width"> 
-                                <a href="#"><i class="ti-instagram"></i></a>
-                                <a href="#"><i class="ti-twitter"></i></a> 
-                                <a href="#"><i class="ti-facebook"></i></a> 
-                                <a href="#"><i class="ti-pinterest"></i></a>
-                                <p>micheal@hotel.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img"> <img src="{% static 'assets/img/team/7.png' %}" alt=""> </div>
-                    <div class="info">
-                        <h6>Olivia Martin</h6>
-                        <p>Reservations Manager</p>
-                        <div class="social valign">
-                            <div class="social valign">
-                                <div class="full-width"> 
-                                   <a href="#"><i class="ti-instagram"></i></a> 
-                                   <a href="#"><i class="ti-twitter"></i></a> 
-                                   <a href="#"><i class="ti-facebook"></i></a> 
-                                   <a href="#"><i class="ti-pinterest"></i></a>
-                                   <p>olivia@hotel.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img"> <img src="{% static 'assets/img/team/7.png' %}" alt=""> </div>
-                    <div class="info">
-                        <h6>Mariana Dana</h6>
-                        <p>F&B Manager</p>
-                        <div class="social valign">
-                            <div class="full-width"> 
-                               <a href="#"><i class="ti-instagram"></i></a> 
-                               <a href="#"><i class="ti-twitter"></i></a> 
-                               <a href="#"><i class="ti-facebook"></i></a> 
-                               <a href="#"><i class="ti-pinterest"></i></a>
-                               <p>mariana@hotel.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img"> <img src="{% static 'assets/img/team/7.png' %}" alt=""> </div>
-                    <div class="info">
-                        <h6>Enrico Brown</h6>
-                        <p>Head Chef</p>
-                        <div class="social valign">
-                            <div class="full-width"> 
-                               <a href="#"><i class="ti-instagram"></i></a> 
-                               <a href="#"><i class="ti-twitter"></i></a> 
-                               <a href="#"><i class="ti-facebook"></i></a> 
-                               <a href="#"><i class="ti-pinterest"></i></a>
-                               <p>enrico@hotel.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% if team %}
+                {% for t in  team %}
                 <div class="item">
                     <div class="img"> <img src="{% static 'assets/img/team/7.png' %}' %}" alt=""> </div>
                     <div class="info">
-                        <h6>Victoria Dan</h6>
-                        <p>Meetings and Events Manager</p>
+                        <h6>{{t.name}}</h6>
+                        <p>{{t.description}}</p>
                         <div class="social valign">
                             <div class="full-width"> 
                                <a href="#"><i class="ti-instagram"></i></a> 
@@ -259,11 +181,43 @@
                         </div>
                     </div>
                 </div>
+                
+                {% endfor %}
+                
+                {% endif %}
+              
             </div>
         </div>
     </div>
 </section>
 
+  <!-- Clients -->
+  <section class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 owl-carousel owl-theme">
+                <div class="clients-logo">
+                    <a href="#0"><img src="{% static 'assets/img/clients/1.png' %}" alt=""></a>
+                </div>
+                <div class="clients-logo">
+                    <a href="#0"><img src="{% static 'assets/img/clients/2.png' %}" alt=""></a>
+                </div>
+                <div class="clients-logo">
+                    <a href="#0"><img src="{% static 'assets/img/clients/3.png' %}" alt=""></a>
+                </div>
+                <div class="clients-logo">
+                    <a href="#0"><img src="{% static 'assets/img/clients/4.png' %}" alt=""></a>
+                </div>
+                <div class="clients-logo">
+                    <a href="#0"><img src="{% static 'assets/img/clients/5.png' %}" alt=""></a>
+                </div>
+                <div class="clients-logo">
+                    <a href="#0"><img src="{% static 'assets/img/clients/6.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 {% endblock content %}

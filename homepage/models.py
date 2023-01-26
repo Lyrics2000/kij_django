@@ -85,3 +85,34 @@ class PrintedSidesOfThePaperCover(models.Model):
 
     def __str__(self) -> str:
         return self.name
+
+
+
+class Banner(models.Model):
+    subtitle = models.CharField(max_length=255)
+    title = models.TextField()
+    image = models.FileField(upload_to=upload_image_path)
+
+
+    def __str__(self) -> str:
+        return self.subtitle
+
+
+
+class AboutTeam(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    
+
+
+    def __str__(self) -> str:
+        return self.name
+
+
+
+class KijabeSerivices(models.Model):
+    service_image =  models.FileField(upload_to=upload_image_path)
+    service_name = models.CharField(max_length=255)
+
+    def __str__(self) -> str:
+        return self.service_name

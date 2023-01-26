@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
+
+
 {% block content %}
 
     <!-- Slider -->
     <header class="header slider-fade">
         <div class="owl-carousel owl-theme">
             <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{% static 'assets/img/slider/2.jpg' %}">
+            {% comment %} <div class="text-center item bg-img" data-overlay-dark="2" data-background="{% static 'assets/img/slider/2.jpg' %}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
@@ -26,8 +29,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{% static 'assets/img/slider/3.jpg' %}">
+            </div> {% endcomment %}
+
+            {% if banner %}
+            {% for u in  banner %}
+            <div class="text-center item bg-img" data-overlay-dark="2" data-background="{{u.image.url}}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
@@ -39,15 +45,17 @@
                                     <i class="star-rating"></i>
                                     <i class="star-rating"></i>
                                 </span>
-                                <h4>Welcome to kijabe printing press</h4>
-                                <h1>The Perfect Printing Press For You</h1>
+                                <h4>{{u.subtitle}}</h4>
+                                <h1 style="color:#2b00db !important;">{{u.title}}</h1>
                                 <div class="butn-light mt-30 mb-30"> <a href="#" data-scroll-nav="1"><span>Books & Services</span></a> </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/slider/1.jpg' %}">
+            {% endfor %}
+            {% endif %}
+            {% comment %} <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/slider/1.jpg' %}">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
@@ -66,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> {% endcomment %}
         </div>
         <!-- slider reservation -->
         <div class="reservation">
@@ -118,16 +126,19 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-subtitle">Kijabe Printing Press</div>
-                    <div class="section-title">Our Services</div>
+                    {% comment %} <div class="section-title">Our Services</div> {% endcomment %}
                 </div>
             </div>
             <div class="row">
+
+                {% if kijabe_services %}
+                {% for k in kijabe_services  %}
                 <div class="col-md-4">
                     <div class="item">
-                        <div class="position-re o-hidden"> <img src="{% static 'assets/img/rooms/13.jpg' %}" alt=""> </div> <span class="category"><a href="product1.html">Learn More</a></span>
+                        <div class="position-re o-hidden"> <img src="{{k.service_image.url}}" alt=""> </div> <span class="category"><a href="product1.html">Learn More</a></span>
                         <div class="con">
                             
-                            <h5><a href="product1.html">Printing Services</a> </h5>
+                            <h5><a href="product1.html">{{k.service_name}}</a> </h5>
                             <div class="line"></div>
                             <div class="row facilities">
                                 
@@ -138,44 +149,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="item">
-                        <div class="position-re o-hidden"> <img src="{% static 'assets/img/rooms/14.jpg' %}" alt=""> </div> <span class="category"><a href=" product1.html">Learn More</a></span>
-                        <div class="con">
-                            
-                            <h5><a href="product1.html">Delivery Services</a></h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                                
-                                <div class="col col-md-5 text-right">
-                                    <div class="permalink"><a href="product1.html">Details <i class="ti-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item">
-                        <div class="position-re o-hidden"> <img src="{% static 'assets/img/rooms/15.jpg' %}" alt=""> </div> <span class="category"><a href="product1.html">Learn More</a></span>
-                        <div class="con">
-                            
-                            <h5><a href="product1.html">SIFUNI BWANA HYMNBOOK SERIES AND OTHER HYMNBOOKS</a></h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                               
-                                <div class="col col-md-5 text-right">
-                                    <div class="permalink"><a href="product1.html">Details <i class="ti-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
+                {% endif %}
+                
+             
                 
             </div>
         </div>
     </section>
     <!-- Pricing -->
-    <section style="background: #E0BFB8!important;" class="pricing section-padding bg-black">
+    {% comment %} <section style="background: #E0BFB8!important;" class="pricing section-padding bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -219,7 +202,7 @@
                             <div class="desc">
                                 <div class="amount">BINDERY/BOOK FINISHING</div>
                                 <p>This department is equipped with highly efficient machines for both sandle-stitched and perfect bound books. Our UV vanishing machines for both full and spot vanishing give your cover the glossy appearance that makes it really attractive. Our state-of-the-art equipment gives you a wide range of finish effects.
- </p>
+                                </p>
                             </div>
                         </div>
                         <div class="pricing-card">
@@ -234,7 +217,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> {% endcomment %}
     <!-- Promo Video -->
     <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="3" data-background="{% static 'assets/img/slider/2.jpg' %}">
             <div class="container">
@@ -247,7 +230,7 @@
                 </div>
                 <div class="row">
                     <div class="text-center col-md-12">
-                        <a class="vid" href="https://youtu.be/7BGNAGahig8">
+                        <a class="vid" href="https://www.youtube.com/watch?v=vr1DWTvsiyM">
                         <div class="vid-butn">
                             <span class="icon">
                                 <i class="ti-control-play"></i>
@@ -260,7 +243,7 @@
             </div>
     </section>
     <!-- Facilties -->
-    <section class="facilties section-padding">
+    <!-- <section class="facilties section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -387,7 +370,7 @@
                 </div> {% endcomment %}
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Booking Search -->
     <section class="section-padding bg-cream">
         <div class="container">
@@ -663,33 +646,7 @@
         </div>
     </section>
 
-    <!-- Clients -->
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 owl-carousel owl-theme">
-                    <div class="clients-logo">
-                        <a href="#0"><img src="{% static 'assets/img/clients/1.png' %}" alt=""></a>
-                    </div>
-                    <div class="clients-logo">
-                        <a href="#0"><img src="{% static 'assets/img/clients/2.png' %}" alt=""></a>
-                    </div>
-                    <div class="clients-logo">
-                        <a href="#0"><img src="{% static 'assets/img/clients/3.png' %}" alt=""></a>
-                    </div>
-                    <div class="clients-logo">
-                        <a href="#0"><img src="{% static 'assets/img/clients/4.png' %}" alt=""></a>
-                    </div>
-                    <div class="clients-logo">
-                        <a href="#0"><img src="{% static 'assets/img/clients/5.png' %}" alt=""></a>
-                    </div>
-                    <div class="clients-logo">
-                        <a href="#0"><img src="{% static 'assets/img/clients/6.png' %}" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  
 
 
 {% endblock content %}

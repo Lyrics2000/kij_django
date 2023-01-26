@@ -16,19 +16,20 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
 
-                    <a class="nav-link active" href="{% url 'homepage:index' %}">Home</a>
+                    <a class="nav-link {{home_nav}}" id="home_nav" href="{% url 'homepage:index' %}">Home</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'homepage:about' %}">About</a></li>
-                <li class="nav-item dropdown"> <span class="nav-link"> Products & Services <i class="ti-angle-down"></i></span>
+                <li class="nav-item"><a class="nav-link {{nav_about}}" id='nav_about' href="{% url 'homepage:about' %}">About</a></li>
+                <li class="nav-item dropdown"> <span id="nav_printing_service" class="nav-link {{nav_printing_service}}"> Products & Services <i class="ti-angle-down"></i></span>
                     <ul class="dropdown-menu last">
-                        <li class="dropdown-item"><a href="{% url 'homepage:printing' %}">Printing Services</a></li>
+                        <li class="dropdown-item"><a  href="{% url 'homepage:printing' %}">Printing Services</a></li>
                         <li class="dropdown-item"><a href="{% url 'homepage:delivery' %}">Delivery Services</a></li>
                         <li class="dropdown-item"><a href="{% url 'homepage:sifuniBwana2' %}">Sifu Bwana</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'homepage:sifuBwana' %}">Sifu Bwana</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'homepage:news' %}">News</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'homepage:contact' %}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link {{nav_sifu_bwana}}" id="nav_sifu_bwana" href="{% url 'homepage:sifuBwana' %}">Sifu Bwana</a></li>
+                <li class="nav-item"><a class="nav-link {{nav_news}}" id="nav_news" href="{% url 'homepage:news' %}">News</a></li>
+                <li class="nav-item"><a class="nav-link {{nav_get_a_quote}}" id="nav_get_a_quote" href="{% url 'homepage:news' %}">Get A Quote</a></li>
+                <li class="nav-item"><a class="nav-link {{nav_contact}}" id="nav_contact" href="{% url 'homepage:contact' %}">Contact</a></li>
             </ul>
         </div>
     </div>
