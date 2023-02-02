@@ -36,48 +36,21 @@
                 <p class="mb-30">Are you a school/learning institution, an urban church or a cosmopolitan church?  The Sifuni Bwana Hymnbooks Series is designed for you. The Sifuni Bwana Hymnbooks Series is a series of two-language hymnbooks, containing selections of favorite and commonly used hymns. They are designed to for use in learning institutions as well as urban and other cosmopolitan churches. We have 4 different languages of Sifuni Bwana Hymn book namely:</p>
                 <h6>Get Our books from the playstore</h6>
                 <ul class="list-unstyled page-list mb-30">
+                    {% if all_s %}
+                    
+                    {% for s in all_s  %}
+                    
                     <li>
                         <div class="page-list-icon"> <span class="ti-time"></span> </div>
                         <div class="page-list-text">
-                            <p>Praise Ye The Lord (Sifuni Bwana) ###########</p>
+                            <a href="{{s.url}}">{{s.name}} -  {{s.price}}</a>
                         </div>
                     </li>
-                    <li>
-                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
-                        <div class="page-list-text">
-                            <p>Nyimbo Za Sifa ############</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
-                        <div class="page-list-text">
-                            <p>Nyimbo Cia Kugooca Mwathani (Sifuni Bwana) ############</p>
-                        </div>
-                    </li>
-                    <LI>
-                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
-                        <div class="page-list-text">
-                            <p>Pakura Ruoth (Praise Ye The Lord) ###########</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
-                        <div class="page-list-text">
-                            <p>Mutaiei Mwiai (Sifuni Bwana) ############</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
-                        <div class="page-list-text">
-                            <p>Nyimbo Cia Kiroho ############</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
-                        <div class="page-list-text">
-                            <p>Maasai Hymn Book (Isinkoliotin) ############</p>
-                        </div>
-                    </li>
+                    
+                    {% endfor %}
+                    {% endif %}
+                   
+                    
                 </ul>
                 <h6>Physical books outlet</h6>
                 <p>You can get our books at any Testbook center, Bookstores or contuct us for one</p>

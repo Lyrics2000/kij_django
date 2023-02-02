@@ -10,9 +10,26 @@ ColorForCover,
 PrintedSidesOfThePaperCover,
 Banner,
 AboutTeam,
-KijabeSerivices)
+KijabeSerivices,
+PlaystoreBook)
 
 # Create your views here.
+
+
+def get_a_quote(request):
+
+    context = {
+         "home_nav":"",
+        "nav_about":"",
+        "nav_sifu_bwana":"",
+        "nav_news":"",
+        "nav_get_a_quote":"active",
+        "nav_contact":"",
+         "nav_printing":"",
+       
+    }
+
+    return render(request,'get_a_quote.html',context)
 
 
 
@@ -38,6 +55,7 @@ def index(request):
         "nav_news":"",
         "nav_get_a_quote":"",
         "nav_contact":"",
+         "nav_printing":"",
         "kijabe_services":kijabe_services,
 
 
@@ -66,6 +84,7 @@ def about(request):
         "nav_news":"",
         "nav_get_a_quote":"",
         "nav_contact":"",
+         "nav_printing":"",
         "team":team
     }
     return render(request,'about.html',context)
@@ -77,6 +96,7 @@ def contact(request):
         "nav_about":"",
         "nav_sifu_bwana":"",
         "nav_news":"",
+         "nav_printing":"",
         "nav_get_a_quote":"",
         "nav_contact":"active",
     }
@@ -92,12 +112,19 @@ def news(request):
         "nav_news":"active",
         "nav_get_a_quote":"",
         "nav_contact":"",
+         "nav_printing":"",
     }
     return render(request,'news.html',context)
 
 
 
 def sifuBwana(request):
+    all_s =  PlaystoreBook.objects.all()
+    print(all_s)
+    books = len(all_s)/2
+    book1  = None
+    book2 = None
+    print(books)
     context = {
      "home_nav":"",
         "nav_about":"",
@@ -105,14 +132,26 @@ def sifuBwana(request):
         "nav_news":"",
         "nav_get_a_quote":"",
         "nav_contact":"",
+        "nav_printing":"",
+        "all_s":all_s
    }
-    return render(request,'sifuBwana.html',context)
+    return render(request,'sifuniBBooks.html',context)
 
 
 
 def printing(request):
+    context = {
+     "home_nav":"",
+        "nav_about":"",
+        "nav_sifu_bwana":"",
+        "nav_news":"",
+        "nav_get_a_quote":"",
+        "nav_contact":"",
+        "nav_printing":"active",
+        
+   }
 
-    return render(request,'printing.html')
+    return render(request,'printing.html',context)
 
 
 
@@ -123,4 +162,26 @@ def delivery(request):
 
 
 def sifuniBwana2(request):
-    return render(request,'product3.html')
+    all_s = PlaystoreBook.objects.filter(sifuBwana =  True)
+
+    context = {
+        "all_books" :all_s
+    }
+
+    return render(request,'sifuniBBooks.html',context)
+
+def sifuB(request):
+    return render(request,'sifuBwana1.html')
+
+
+def otherHymn(request):
+    all_s =  PlaystoreBook.objects.filter(sifuBwana =  False )
+
+    context = {
+        "all_s":all_s
+    }
+    return render(request,'otherHymn.html',context)
+
+
+def ExerciseBooks(request):
+    return render(request,'exercise_books.html')

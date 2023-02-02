@@ -4,7 +4,11 @@ news,
 sifuBwana,
 printing,
 delivery,
-sifuniBwana2)
+sifuniBwana2,
+get_a_quote,
+sifuB,
+otherHymn,
+ExerciseBooks)
 
 app_name = "homepage"
 
@@ -16,6 +20,10 @@ urlpatterns = [
     path("sifuBwana/",sifuBwana,name="sifuBwana"),
     path("printing/",printing,name="printing"),
     path("delivery/",delivery,name="delivery"),
-    path("sifuniBwana2/",sifuniBwana2,name="sifuniBwana2")
+    path("get_a_quote/",get_a_quote,name="get_a_quote"),
+    path("sifuniBwana2/",sifuniBwana2,name="sifuniBwana2"),
+    path("sifuB/",sifuB,name="sifuB"),
+    path("otherHymn/",otherHymn,name="otherHymn"),
+    path("ExerciseBooks/",ExerciseBooks,name="ExerciseBooks")
   
 ]

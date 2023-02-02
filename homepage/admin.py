@@ -12,10 +12,12 @@ ColorForCover,
 PrintedSidesOfThePaperCover,
 Banner,
 AboutTeam,
-KijabeSerivices)
+KijabeSerivices,
+PlaystoreBook)
 
 
 
+admin.site.register(PlaystoreBook)
 admin.site.register(KijabeSerivices)
 admin.site.register(AboutTeam)
 admin.site.register(BooksHolder)

@@ -116,3 +116,19 @@ class KijabeSerivices(models.Model):
 
     def __str__(self) -> str:
         return self.service_name
+
+
+class PlaystoreBook(models.Model):
+    name  = models.CharField(max_length=255)
+    price = models.CharField(max_length=255, blank=True,null=True)
+    book_description = models.CharField(max_length=255,blank=True,null=True)
+    sifuBwana = models.BooleanField(default=False)
+    book_image = models.FileField(upload_to=upload_image_path,blank=True,null=True)
+
+    url = models.URLField()
+
+
+    def __str__(self) -> str:
+        return self.name
+
+

@@ -5062,3 +5062,29 @@ select {
         margin-left: 0px;
     }
 }
+
+
+.sss {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E0BFB8;
+    padding: 5px;
+}
+
+.sss p{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sss p:hover{
+    color: #2b00db;
+    text-decoration: underline;
+}
+
+.sjyw{
+    padding: 5px;
+}
+

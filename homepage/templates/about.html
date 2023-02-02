@@ -20,7 +20,7 @@
 <section class="about section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp"> 
+            <div class="col-md-12 mb-10 animate-box" data-animate-effect="fadeInUp"> 
                 <span>
                     <i class="star-rating"></i>
                     <i class="star-rating"></i>
@@ -29,26 +29,49 @@
                     <i class="star-rating"></i>
                 </span>
                 <div class="section-subtitle">Kijabe Printing Press</div>
-                <div class="section-title">Committed to Printing with Integrity</div>
-                <p>Our job is to focus on the needs of our clients. We offer you quality printing
-                    services at affordable prices. We really do understand how important your work is to you and treat every job as if it was our only job, paying close attention to every detail. We are committed to meeting deadline and strict timelines. The demonstration of our professionalism is the significant and prestigious client base we have.</p>
-                    <p>We have a dedicated team of management and professional staff; we therefore give you expert advice and produce quality print work. We promptly respond to customer enquiries and requests, and the average turnaround time for placed orders is two weeks; depending on the customer needs, this time can get even shorter.</p>
-                    <p>We are situated in AIC Kijabe Mission, which is approximately 50 kms from Nairobi. We also have a marketing office at A.I.C Central Office in Upperhill, Nairobi, next to the British High Commission.</p>
-                <!-- reservation -->
-                <div class="reservations">
+                <div class="section-title">About Kijabe</div>
+                <p>AIC Kijabe Printing Press was started in the 1915 as an arm of Africa Inland Mission (AIM). Initially we were established to print Christian literature, but later ventured into commercial printing while still upholding its Christian identity and values. <span id="spanMore" style="color:blue;cursor:pointer;">(Read More)</span> <span id="spanLess"  style="color:red;cursor:pointer;display:none;">(Read Less)</span></p>
+                    
+                    
+                <div id="moreKijabe" style="display:none;">
+                    <p>We are a Christian based printing firm registered as a private limited company. 
+                        The original purpose of the press was to provide reading materials for propagation of the Gospel.  The church had found that the Kenyans who were being converted and who were slowly being introduced to formal learning needed to have reading materials to ensure they become grounded in God’s word. The press was started to meet this need
+                        </p>
+                    <p>
+                        The technology or the time and the low demand dictated for the humble beginnings of the press where at the beginning a stationary bicycle was peddled to provide the power needed to run the printing machine.  However, as the demand increased, a diesel engine was used to provide the power.
+                    </p>
+
+                    <p>
+                        The number of converts, the number of missionaries and even pastors increased over the years and Africa Inland Church (AIC) in collaboration with AIM found it necessary in 1953 to make Kijabe Printing Press a fully-fledged department with a full time missionary assigned to manage it.  This arrangement continued until 1971 when AIM handed over the running of the Press to the AIC Central Church office.  Since then, the press has been under the AIC Central Office who in their wisdom appoints a Board of Management to manage its affairs. In 1984, Kijabe Printing Press was registered as a Company limited by guarantee and not having any share capital.
+                    </p>
+
+                    <p>
+
+                        By God’s grace we have grown over the to become a leading printing firm in Kenya. We are also a growing brand in Africa.
+                    </p>
+
+                    <p>
+                        We are situated in AIC Kijabe Missionary Center, approximately 50 km from Nairobi and about 5 Km off Nairobi–Nakuru trunk road in Kiambu County.  We also have a marketing office in Nairobi in AIC headquarters at Upper hill road next to the British High Commission.
+                    </p>
+                    
+                
+                <div>
+                   
+                    <!-- reservation -->
+                
+                {% comment %} <div class="reservations">
                     <div class="icon"><span class="flaticon-call"></span></div>
                     <div class="text">
                         <p>Reservation</p> <a href="tel:855-100-4444">0715 672 029</a>
                     </div>
-                </div>
+                </div> {% endcomment %}
             </div>
-            <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"> <img src="{% static 'assets/img/rooms/16.jpg' %}" alt="" class="mt-90 mb-30"> </div>
-            <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp"> <img src="{% static 'assets/img/rooms/17.jpg' %}" alt=""> </div>
+          
         </div>
     </div>
 </section>
 <!-- Testiominals -->
-<section class="testimonials">
+{% comment %} <section class="testimonials">
     <div class="background bg-img bg-fixed section-padding pb-0" data-background="{% static 'assets/img/slider/2.jpg' %}" data-overlay-dark="3">
         <div class="container">
             <div class="row">
@@ -77,15 +100,21 @@
             </div>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 
 
 
 
     <!-- Services -->
-    <section class="services section-padding">
-        <div class="container">
-            <div class="row">
+    <section class="services ">
+        <div  class="container sss">
+            <p id="1_clikc" onclick="handClikc('1_clikc')"><span></span></p>
+            <p id="2_clikc" onclick="handClikc('2_clikc')">Our Vision <span></span></p>
+            <p id="3_clikc" onclick="handClikc('3_clikc')">Our Mision <span></span></p>
+            <p id="4_clikc" onclick="handClikc('4_clikc')">Our Core Values <span></span></p>
+            <p id="5_clikc" onclick="handClikc('5_clikc')">Our Moto <span></span></p>
+            <p id="6_clikc" onclick="handClikc('6_clikc')"><span></span></p>
+            {% comment %} <div class="row">
                 <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
                     <div class="img left"><img src="{% static 'assets/img/restaurant/4.jpg' %}" alt=""></a>
                     </div>
@@ -149,11 +178,34 @@
                     <div class="img"><img src="{% static 'assets/img/spa/7.png' %}" alt=""></a>
                     </div>
                 </div>
+            </div> {% endcomment %}
+        </div>
+
+        <div class="container sjyw">
+            <div class="row">
+                <div class="col-md-12 mb-10 animate-box" data-animate-effect="fadeInUp"> 
+                    
+              
+                    <div id="name_header" class="section-title">Our Vision</div>
+                    <p id="name_description">To become the leading Christian printing firm in Africa and beyond. </p>
+                        
+                        
+                    
+                        <!-- reservation -->
+                    
+                    {% comment %} <div class="reservations">
+                        <div class="icon"><span class="flaticon-call"></span></div>
+                        <div class="text">
+                            <p>Reservation</p> <a href="tel:855-100-4444">0715 672 029</a>
+                        </div>
+                    </div> {% endcomment %}
+                </div>
+              
             </div>
         </div>
     </section>
 <!-- Team -->
-<section class="team section-padding bg-cream">
+{% comment %} <section class="team section-padding bg-cream">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -166,7 +218,7 @@
                 {% if team %}
                 {% for t in  team %}
                 <div class="item">
-                    <div class="img"> <img src="{% static 'assets/img/team/7.png' %}' %}" alt=""> </div>
+                
                     <div class="info">
                         <h6>{{t.name}}</h6>
                         <p>{{t.description}}</p>
@@ -189,35 +241,124 @@
             </div>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 
   <!-- Clients -->
-  <section class="clients">
+  {% comment %} <section class="clients">
     <div class="container">
         <div class="row">
-            <div class="col-md-7 owl-carousel owl-theme">
-                <div class="clients-logo">
-                    <a href="#0"><img src="{% static 'assets/img/clients/1.png' %}" alt=""></a>
+            <div class="col-md-12 owl-carousel owl-theme">
+                {% if team %}
+                {% for t in  team %}
+                <div class="item">
+                
+                    <div class="info">
+                        <h6>{{t.name}}</h6>
+                        <p>{{t.description}}</p>
+                        <div class="social valign">
+                            <div class="full-width"> 
+                               <a href="#"><i class="ti-instagram"></i></a> 
+                               <a href="#"><i class="ti-twitter"></i></a> 
+                               <a href="#"><i class="ti-facebook"></i></a> 
+                               <a href="#"><i class="ti-pinterest"></i></a>
+                               <p>victoria@hotel.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="clients-logo">
-                    <a href="#0"><img src="{% static 'assets/img/clients/2.png' %}" alt=""></a>
-                </div>
-                <div class="clients-logo">
-                    <a href="#0"><img src="{% static 'assets/img/clients/3.png' %}" alt=""></a>
-                </div>
-                <div class="clients-logo">
-                    <a href="#0"><img src="{% static 'assets/img/clients/4.png' %}" alt=""></a>
-                </div>
-                <div class="clients-logo">
-                    <a href="#0"><img src="{% static 'assets/img/clients/5.png' %}" alt=""></a>
-                </div>
-                <div class="clients-logo">
-                    <a href="#0"><img src="{% static 'assets/img/clients/6.png' %}" alt=""></a>
-                </div>
+                
+                {% endfor %}
+                
+                {% endif %}
+              
             </div>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
+
+
+<script>  
+
+   
+    const spanMore   = document.getElementById("spanMore");
+    const spanLess  =  document.getElementById("spanLess")
+
+    spanMore.onclick = function(){ 
+       document.getElementById("moreKijabe").style.display = "block";
+       spanMore.style.display  ="none";
+     
+    
+    };
+
+
+</script>
+
+
+<script>
+
+
+    function  handClikc (e){
+        console.log(e)
+        document.getElementById(`1_clikc`).style.color = "white"
+        document.getElementById(`1_clikc`).style.textDecoration = "none"
+        document.getElementById(`2_clikc`).style.color = "white"
+        document.getElementById(`2_clikc`).style.textDecoration = "none"
+        document.getElementById(`3_clikc`).style.color = "white"
+        document.getElementById(`3_clikc`).style.textDecoration = "none"
+        document.getElementById(`4_clikc`).style.color = "white"
+        document.getElementById(`4_clikc`).style.textDecoration = "none"
+        
+        document.getElementById(`5_clikc`).style.color = "white"
+        document.getElementById(`5_clikc`).style.textDecoration = "none"
+        document.getElementById(`6_clikc`).style.color = "white"
+        document.getElementById(`6_clikc`).style.textDecoration = "none"
+
+        const headerd =  document.getElementById("name_header");
+        const bodyH =  document.getElementById("name_description")
+
+        if(e.includes("2")){
+            headerd.innerText = "Our Vision"
+            bodyH.innerText = "To become the leading Christian printing firm in Africa and beyond."
+
+        }else if(e.includes("3")){
+            headerd.innerText = "Our Mision"
+            bodyH.innerText = "To provide quality, efficient and affordable printing services to all our clients and to support the Church and other Christian organizations in fulfilling the Great Commission. "
+
+        } else if(e.includes("4")){
+            headerd.innerText = "Our Core Values"
+           
+            bodyH.innerHTML = `<ol> 
+                <li> i. Integrity </li>
+                <li> ii.  Commitment </li>
+                <li> iii.	Dynamism </li>
+                <li> iv.	Reliability</li>
+                <li>v.	Excellence</li>
+                <li>vi.	Innovation</li>
+                
+                </ol>`
+
+        }else if(e.includes("5")){
+            headerd.innerText = "Our Core Values"
+           
+            bodyH.innerText = "Committed to Printing with Integrity."
+
+
+        }
+        
+
+
+
+
+
+        document.getElementById(`${e}`).style.color = 'blue';
+        document.getElementById(`${e}`).style.textDecoration = "underline"
+    };
+
+
+</script>
+
+
+
 
 
 {% endblock content %}

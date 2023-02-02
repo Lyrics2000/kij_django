@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <!-- Restaurant Slider -->
+  <header class="header slider">
+    <div class="owl-carousel owl-theme">
+        <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/restaurant/13.jpg' %}"></div>
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/restaurant/5.jpg' %}"></div>
+        <div class="text-center item bg-img" data-overlay-dark="3" data-background="{% static 'assets/img/restaurant/14.jpeg' %}"></div>
+    </div>
+    <!-- arrow down -->
+    <div class="arrow bounce text-center">
+        <a href="#" data-scroll-nav="1" class=""> <i class="ti-arrow-down"></i> </a>
+    </div>
+</header>
+<!-- Restaurant Content -->
+<section class="rooms-page section-padding" data-scroll-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-left"> 
+                <span>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                    <i class="star-rating"></i>
+                </span>
+                <div class="section-subtitle">Other Hymnbooks.</div>
+                <div class="section-title">Other Hymnbooks.</div>
+            </div>
+            <div class="col-md-12">
+                <p class="mb-30">AIC Kijabe Printing Press is the authorized printer and distributor of this wide range of Hymnbooks.</p>
+                <h6>Get Our books from the playstore</h6>
+                <ul class="list-unstyled page-list mb-30">
+                    {% if all_s %}
+                    
+                    {% for s in all_s  %}
+                    
+                    <li>
+                        <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                        <div class="page-list-text">
+                            <a href="{{s.url}}">{{s.name}} -  {{s.price}}</a>
+                        </div>
+                    </li>
+                    
+                    {% endfor %}
+                    {% endif %}
+                   
+                    
+                </ul>
+          
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Restaurant Menu -->
+
+{% endblock content %}
